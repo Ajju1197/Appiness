@@ -1,0 +1,6 @@
+#marrow-bones {
+ @include section-gap-normal;
+ .marrow-bone-title {
+  @include section-title;
+ }
+}

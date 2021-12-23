@@ -1,0 +1,22 @@
+#dropdown-list {
+ @include section-gap-normal;
+ .accordion {
+  .accordion-item {
+   border: none;
+   border-bottom: 1px solid rgb(223, 213, 213);
+   .accordion-header {
+    .accordion-button {
+     color: #1d5aa6;
+     font-weight: bold;
+     font-size: 20px;
+     letter-spacing: 1.6px;
+     line-height: 22px;
+     text-align: left;
+     &::after {
+      background-image: url(../../img/icons/down-arrow.png) !important;
+     }
+    }
+   }
+  }
+ }
+}

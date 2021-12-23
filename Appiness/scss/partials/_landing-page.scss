@@ -1,0 +1,116 @@
+#main-header {
+ @include section-gap-normal;
+ background: url(../../img/Banner_mage.png) no-repeat;
+ background-size: cover;
+ width: 100%;
+ .banner-content {
+  @include media-breakpoint-down(md) {
+   .row {
+    row-gap: 3em;
+    text-align: center;
+   }
+  }
+  .logo {
+   //  min-height: 239px;
+   margin-bottom: 3em;
+   display: flex;
+   align-items: center;
+   @include media-breakpoint-down(md) {
+    justify-content: center;
+   }
+  }
+  .content {
+   h1 {
+    color: #ffffff;
+
+    font-size: 31px;
+    letter-spacing: 1.28px;
+    font-weight: 600;
+    text-align: left;
+    @include media-breakpoint-down(md) {
+     text-align: center;
+    }
+   }
+   p {
+    color: #ffffff !important;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 25px;
+    letter-spacing: 3.59px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 2em;
+    @include media-breakpoint-down(md) {
+     text-align: center;
+    }
+   }
+  }
+  .btn {
+   padding: 0;
+   .booking-btn {
+    background-color: #dd5a6a;
+    border-radius: 3.2px;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 !important;
+   }
+  }
+ }
+ .contact-form-container {
+  width: 380px;
+  @include media-breakpoint-down(md) {
+   width: 100%;
+  }
+
+  .contact-form {
+   padding: 3em;
+   background-color: #ffffff;
+   box-shadow: -4px 2px 13px 0 rgba(85, 95, 126, 0.18);
+   // width: 339px;
+   @include media-breakpoint-down(md) {
+    width: 339px;
+   }
+   margin: auto;
+   // height: 492px;
+   .enquire {
+    h1 {
+     color: #213559;
+     font-size: 20.08px;
+     line-height: 24px;
+     width: 127px;
+     text-align: left;
+     margin-bottom: 2em;
+    }
+   }
+   .form-control {
+    //  width: 278px !important;
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 0.7em;
+    &::placeholder {
+     color: #213559;
+     font-size: 12.22px;
+     line-height: 15px;
+     text-align: left;
+    }
+   }
+   .btn-submit {
+    background-color: #dd5a6a;
+    width: 111px;
+    border: none;
+    height: 44px;
+   }
+   .form-check-input {
+    border-radius: 0 !important;
+    margin-top: 5px !important;
+    margin-right: 5px !important;
+   }
+   .form-check-label {
+    color: #213559;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 12.22px;
+    text-align: left;
+    margin-top: 5px;
+   }
+  }
+ }
+}

@@ -1,0 +1,39 @@
+#about-bones {
+ @include section-gap-normal;
+ @include media-breakpoint-down(lg) {
+  .row {
+   row-gap: 2em;
+  }
+ }
+ .left-image {
+  display: flex;
+  justify-content: flex-start;
+  @include media-breakpoint-down(lg) {
+   justify-content: center;
+   width: 100%;
+  }
+  @include media-breakpoint-down(md) {
+   img {
+    width: 100%;
+   }
+  }
+ }
+ .about-content {
+  // row-gap: 1em;
+  h2 {
+   margin-bottom: 1.5em;
+   border-radius: 4px;
+   background-image: linear-gradient(to right, #2ec4b8 0%, #6078ea 100%);
+   color: #ffffff;
+   font-family: "Titillium Web", sans-serif;
+   font-size: 18px;
+   text-align: left;
+   padding: 20px 20px;
+  }
+
+  .line {
+   border-bottom: 1px solid rgb(231, 224, 224);
+   padding-bottom: 3em;
+  }
+ }
+}
