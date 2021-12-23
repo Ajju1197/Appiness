@@ -1,0 +1,26 @@
+.footer {
+ @include section-gap-normal;
+ min-height: 255px;
+ background: #272727;
+ .social-media {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2em;
+  ul {
+   column-gap: 1em;
+   li {
+    cursor: pointer;
+   }
+  }
+ }
+ .copy-right {
+  p {
+   color: #ffffff;
+   font-size: 14px;
+   letter-spacing: 1.12px;
+   line-height: 17px;
+   text-align: left;
+   padding-top: 2em;
+   text-align: center;
+  }
+ }
+}
