@@ -1,0 +1,157 @@
+#doctors {
+ @include section-gap-normal;
+ .section-title {
+  h1 {
+   color: #22b78e;
+   font-family: "Titillium Web", sans-serif;
+   font-size: 31px;
+   letter-spacing: 1.28px;
+   //  font-weight: bold;
+   text-align: left;
+   margin-bottom: 1em;
+  }
+ }
+ .row {
+  @include media-breakpoint-down(md) {
+   row-gap: 3em;
+  }
+  .card {
+   text-align: center;
+   display: flex;
+   row-gap: 1em;
+   background-color: #f9f9ff;
+   border-radius: 4px;
+   padding: 2.5em 1em;
+   border: none;
+   .card1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    .title {
+     h1 {
+      color: #22b78e;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.99px;
+      font-weight: 600;
+     }
+    }
+    .name {
+     h2 {
+      color: #1d5aa6;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 22px;
+      letter-spacing: 1.76px;
+      font-weight: 600;
+     }
+    }
+    .role {
+     position: relative;
+     &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background: #22b78e;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -0.8em;
+     }
+     small {
+      color: #1d5aa6;
+      font-size: 15px;
+      letter-spacing: 1.2px;
+      text-align: center;
+     }
+    }
+    .description {
+     text-align: center;
+     p {
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 15px;
+      line-height: 20px;
+     }
+    }
+    .know-more-btn {
+     button {
+      background-image: linear-gradient(to right, #2ec4b8 0%, #6078ea 100%);
+      border-radius: 4px;
+      padding: 10px 20px;
+      border: none;
+      color: #fff;
+     }
+    }
+   }
+   .card2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    .title {
+     h1 {
+      color: #22b78e;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.99px;
+      font-weight: 600;
+     }
+    }
+    .name {
+     h2 {
+      color: #1d5aa6;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 22px;
+      letter-spacing: 1.76px;
+      font-weight: 600;
+     }
+    }
+    .role {
+     position: relative;
+     &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background: #22b78e;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -0.8em;
+     }
+     small {
+      color: #1d5aa6;
+      font-size: 15px;
+      letter-spacing: 1.2px;
+      text-align: center;
+     }
+    }
+    .description {
+     p {
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+     }
+    }
+    .know-more-btn {
+     button {
+      background-image: linear-gradient(to right, #2ec4b8 0%, #6078ea 100%);
+      border-radius: 4px;
+      padding: 10px 20px;
+      border: none;
+      color: #fff;
+     }
+    }
+   }
+
+   .line {
+    border-bottom: 1px solid rgb(231, 224, 224);
+    width: 80%;
+    margin: 0 auto;
+    // padding-bottom: 3em;
+   }
+  }
+ }
+}
